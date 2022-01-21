@@ -104,7 +104,7 @@ dist
 .tern-port
 
 # package-lock
-package-lock
+package-lock.json
 
 # log folder
 log/
