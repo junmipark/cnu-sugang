@@ -11,7 +11,7 @@
 
 # 기술 스택
 - Back-End: Node.js
-- Front-End: HTML/CSS, javascript
+- Front-End: HTML/CSS, javascript(ejs)
 - Database: MongoDB
 
 # 주요 기능
