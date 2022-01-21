@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.ejs')%>
+    <body>
+        <div class="container">
+            <div id="cardbox" class="ui card">
+                <div class="content">
+                    <div class = "left floated author">
+                        <i id="iconImage" class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <div id="titleText" class="header"><%= title %></div>
+                        <div id="contentsText" class="description">
+                            <%= description %>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <tr valign="baseline">
+                        <td></td>
+                        <td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/listcourse'">수강신청하기</button>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/mycourse'">나의 수강목록 조회하기</button>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/logout'">로그아웃 하기</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </body>
+</html>

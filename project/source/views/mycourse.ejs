@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.ejs')%>
+    <body>
+        <div class="container">
+            <div id="cardbox" class="ui card">
+                <div class="content">
+                    <div class = "left floated author">
+                        <i id="iconImage" class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <div id="titleText" class="header"><%= title %></div><br>
+                        <div id="contentsText" class="description">
+                            >> <%= curName %> 현재 로그인 중
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <tr class="row">
+                        <td class="col1">
+                            <label id ="contentsText">과목번호</label>
+                        </td>
+                        <td class="col1">
+                            <label id ="contentsText">강의시간</label>
+                        </td>
+                        <td class="col1">
+                            <label id ="contentsText">이수학점</label>
+                        </td>
+                    </tr>
+                    <% for (var i=0; i<results.length; i++) {%>
+                    <tr class="row">                
+                        <form id="form1" method="post" action="/process/cancle">
+                            <input type="hidden" name="c_id" value="<%= results[i]._doc.c_id %>"/>
+                            <input type="hidden" name="tot_cred" value="<%= results[i]._doc.tot_cred %>"/>
+                            <input type="hidden" name="cred" value="<%= results[i]._doc.cred %>"/>
+                            <td class="col1">
+                                <label id ="contentsText"><%= results[i]._doc.c_id %></label>
+                            </td>
+                            <td class="col1">
+                                <label id ="contentsText"><%= results[i]._doc.time %></label>
+                            <td class="col1">
+                                <label id ="contentsText"><%= results[i]._doc.cred %></label>
+                            <td class="col1">                
+                                <input id="submitCourse" class="ui primary button" type="submit" value="수강취소" name="">
+                            </td>
+                        </form>
+                    </tr>
+                    <% } %>
+                    <tr class="row">                                
+                        <label id ="contentsText">총 수강신청 학점 : <%= tot_cred %></label>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr valign="baseline">
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/modifyUser'">사용자 정보 수정하기</button>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/listcourse'">수강신청하기</button>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/logout'">로그아웃하기</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
