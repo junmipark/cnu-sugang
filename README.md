@@ -5,6 +5,7 @@
 # 기술 스택
 - Back-End: Node.js
 - Front-End: HTML/CSS, javascript
+- Database: MongoDB
 
 # 주요 기능
 - 로그인 / 로그아웃
