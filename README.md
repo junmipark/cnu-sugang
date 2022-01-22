@@ -1,4 +1,7 @@
 # 개요
+
+![image](https://user-images.githubusercontent.com/92344242/150626095-e662c102-c1fe-44f6-8960-1b5914fdbead.png)
+
 - Node.js 및 Express 모듈을 이용한 수강신청사이트 제작
 - 충남대학교 전파정보통신공학과 4학년 1학기 <네트워크 프로그래밍> 기말 프로젝트 2020.06
 
