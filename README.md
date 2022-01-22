@@ -36,6 +36,7 @@ https://youtu.be/67d6rsh3AGI
 
 ## 발표 자료
 https://docs.google.com/presentation/d/1nHHWv6auvpg7AORrDOGbht_W188Ues2R/edit?usp=sharing&ouid=109431752741517625780&rtpof=true&sd=true
+*발표자료에 포함된 웹사이트 링크는 현재(2022년 1월 기준) 이용할 수 없습니다.*
 
 ## 참고 서적
 Do it ! Node.js 프로그래밍 (2017. 3. 20.)
